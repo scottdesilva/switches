@@ -1,0 +1,43 @@
+:root {
+  --color-primary: #0198E1;
+  --color-secondary: #CC99FF;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.Search {
+  background-color: var(--color-secondary);
+}
+
+.SearchBar {
+  margin-top: 8em;
+  margin-bottom: 8em;
+  border-radius: .5em;
+}
+
+.CardContainer {
+  background-color: #282c34;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+}
+
+.Card {
+  background-color: var(--color-primary);
+  color: white;
+  max-width: 300px;
+  border-radius: .25em;
+  margin: 2em;
+  box-shadow: 4px -4px var(--color-secondary);
+}
+
+.Card:hover {
+  transform: scale(1.05);
+}

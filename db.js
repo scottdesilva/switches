@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 let port = process.env.SERVER_PORT;
 if (port == null || port == "") {
-    port = 8000;
+    port = 8080;
 }
 var mysql = require('mysql');
 
@@ -27,7 +27,7 @@ app.listen(port, () => {
 
 const db = mysql.createConnection({
     user: process.env.MYSQL_USER,
-    host: "localhost",
+    host: process.env.MYSQL_HOST,
     password: process.env.MYSQL_PASSWORD,
     database: process.env.MYSQL_DATABASE 
 });

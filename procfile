@@ -1,1 +1,1 @@
-web: node server/db.js && cd client && npm start
+web: npm start

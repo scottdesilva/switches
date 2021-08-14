@@ -14,7 +14,6 @@ app.use((req, res, next) => {
   
 
 app.get('/', (req,res) => {
-    // res.send('Hello World');
     db.query("select * from switches", (err,result) => {
         if(err) throw err;
         res.send(result);
